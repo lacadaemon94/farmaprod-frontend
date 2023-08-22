@@ -1,0 +1,28 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Global styles */
+@layer base {
+  html,
+  body {
+    @apply font-serif bg-light antialiased;
+  }
+}
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: theme(
+    "colors.risdblue.300"
+  );; /* Remove background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: theme(
+    "colors.risdblue.600"
+  ); /* Set thumb color to risdblue-600 */
+  border-radius: 1rem; /* Optional: Add some border-radius to make it look smoother */
+}
